@@ -1,11 +1,11 @@
 <script>
   partytown = {
     forward: ['dataLayer.push', 'vtexrca'].concat("{{settings.forward}}".split(',')),
-    lib: '/_v/public/assets/v1/published/vtex.partytown@0.0.1-alpha.9/public/~partytown/',
+    lib: '/_v/public/assets/v1/published/vtex.partytown@0.0.1-alpha.10/public/~partytown/',
     resolveUrl: function (url) {
       var domain = url.hostname.replace('www.', '')
 
-      if ("{{settings.toProxyDomains}}".split(',').indexOf(domain)) {
+      if ("{{settings.toProxyDomains}}".split(',').indexOf(domain) >= 0) {
         // TODO: This URL is just for test purposes and must be removed before deploying
         return new URL(`https://reverse-proxy-vtex.herokuapp.com/${url}`);
       }
