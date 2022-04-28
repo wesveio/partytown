@@ -10,4 +10,8 @@
 
 Partytown is app to manage your third party scripts.
 
+## Development
+
+Modify the `src/head.html` file and run the `yar run build` command.
+
 <!-- TODO: Documentation -->
