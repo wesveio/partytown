@@ -1,7 +1,7 @@
 {
   "name": "partytown",
   "vendor": "vtex",
-  "version": "0.0.1-alpha.19",
+  "version": "0.0.1",
   "title": "Partytown",
   "description": "Partytown",
   "billingOptions": {
@@ -11,7 +11,9 @@
     },
     "free": true,
     "type": "free",
-    "availableCountries": ["*"]
+    "availableCountries": [
+      "*"
+    ]
   },
   "builders": {
     "react": "3.x",
