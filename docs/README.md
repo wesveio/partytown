@@ -12,6 +12,8 @@ Partytown is app to manage your third party scripts.
 
 > ℹ️ **Partytown is currently in Alpha**. Which means it's still not a final version and may have flaws. We recommend always testing all scripts while implementing this guide.
 
+> ℹ️  If you are using `experimentalLazyLoad` we recommend to disable it for `vtex.partytown` and any other pixel you want to run in partytown.
+
 ## Usage
 ### Installing partytown
 
