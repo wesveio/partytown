@@ -17,7 +17,7 @@ Partytown is app to manage your third party scripts.
 ## Usage
 ### Installing partytown
 
-Install the `vtex.partytown` on your new workspace by running `vtex install vtex.partytown@0.0.1-alpha.19`
+Install the `vtex.partytown` on your new workspace by running `vtex install vtex.partytown@0.x`
 
 ### Migrating your pixel app to the partytown format
 

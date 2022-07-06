@@ -1,34 +1,11 @@
-/* Partytown 0.5.4 - MIT builder.io */
+/* Partytown 0.5.2 - MIT builder.io */
 ;(window => {
   const isPromise = v => 'object' == typeof v && v && v.then
   const noop = () => {}
   const len = obj => obj.length
   const getConstructorName = obj => {
-    var _a, _b, _c
     try {
-      const constructorName =
-        null === (_a = null == obj ? void 0 : obj.constructor) || void 0 === _a
-          ? void 0
-          : _a.name
-      if (constructorName) {
-        return constructorName
-      }
-    } catch (e) {}
-    try {
-      const zoneJsConstructorName =
-        null ===
-          (_c =
-            null ===
-              (_b =
-                null == obj ? void 0 : obj.__zone_symbol__originalInstance) ||
-            void 0 === _b
-              ? void 0
-              : _b.constructor) || void 0 === _c
-          ? void 0
-          : _c.name
-      if (zoneJsConstructorName) {
-        return zoneJsConstructorName
-      }
+      return obj.constructor.name
     } catch (e) {}
     return ''
   }
@@ -838,7 +815,7 @@
     mainAccessHandler(worker, accessReq).then(responseCallback)
   ).then(onMessageHandler => {
     if (onMessageHandler) {
-      worker = new Worker(libPath + 'partytown-ww-sw.js?v=0.5.4', {
+      worker = new Worker(libPath + 'partytown-ww-sw.js?v=0.5.2', {
         name: 'Partytown 🎉',
       })
       worker.onmessage = ev => {
@@ -847,7 +824,7 @@
           ? mainAccessHandler(worker, msg[1])
           : onMessageHandler(worker, msg)
       }
-      logMain('Created Partytown web worker (0.5.4)')
+      logMain('Created Partytown web worker (0.5.2)')
       worker.onerror = ev => console.error('Web Worker Error', ev)
       mainWindow.addEventListener('pt1', ev =>
         registerWindow(
