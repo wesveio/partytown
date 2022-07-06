@@ -2,11 +2,6 @@
 <script>
   partytown = {
     forward: ['dataLayer.push', 'vtexrca', 'fbq'].concat(forward.split(',')),
-    lib: `/_v/public/assets/v1/published/vtex.partytown@{{version}}/public/~partytown/`,
-    resolveUrl: function (url) {
-      var domain = url.hostname.replace('www.', '')
-
-      return new URL(`https://reverse-proxy-vtex.herokuapp.com/${url}`);
-    },
+    lib: `/_v/public/assets/v1/published/vtex.partytown@{{version}}/public/~partytown/`
   };
 </script>

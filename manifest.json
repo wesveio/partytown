@@ -1,7 +1,7 @@
 {
   "name": "partytown",
   "vendor": "vtex",
-  "version": "0.0.1-alpha.13",
+  "version": "0.0.1-alpha.14",
   "title": "Partytown",
   "description": "Partytown",
   "billingOptions": {
@@ -28,12 +28,7 @@
     "properties": {
       "forward": {
         "title": "Forward",
-        "description": "Forwarding events and triggers separated by `,`. https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-4-configuringyourappsettings",
-        "type": "string"
-      },
-      "toProxyDomains": {
-        "title": "Proxy domains",
-        "description": "Domains that will use the VTEX proxy separated by ','. Useful if you are having CORS issues.",
+        "description": "Forwarding events and triggers separated by `,`.",
         "type": "string"
       }
     }
