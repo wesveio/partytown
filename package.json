@@ -22,7 +22,7 @@
     ]
   },
   "devDependencies": {
-    "@builder.io/partytown": "^0.5.2",
+    "@builder.io/partytown": "^0.7.4",
     "@vtex/prettier-config": "^0.1.4",
     "eslint": "^6.8.0",
     "eslint-config-vtex": "^12.3.2",

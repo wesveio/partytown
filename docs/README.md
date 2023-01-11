@@ -33,6 +33,34 @@ Install the `vtex.partytown` on your new workspace by running `vtex install vtex
 
 ![image](https://user-images.githubusercontent.com/40380674/169821502-4148db94-4a1a-493f-95ee-aaf5e243ebec.png)
 
+
+## Known Issues
+
+### Uncaught TypeError: Cannot convert undefined or null to object
+
+```
+Uncaught TypeError: Cannot convert undefined or null to object
+    at Function.getPrototypeOf (<anonymous>)
+    at readOwnImplementation (partytown-sandbox-sw.js?v=0.7.4:492:38)
+    at partytown-sandbox-sw.js?v=0.7.4:478:75
+    at Array.map (<anonymous>)
+    at readImplementations (partytown-sandbox-sw.js?v=0.7.4:478:19)
+    at readMainPlatform (partytown-sandbox-sw.js?v=0.7.4:450:27)
+    at partytown-sandbox-sw.js?v=0.7.4:542:56
+    at worker.onmessage (partytown-sandbox-sw.js?v=0.7.4:552:69)
+```
+
+VTEX uses the [history npm lib](https://www.npmjs.com/package/history). Partytown doesn't have support for this lib, that's why this error is thrown.
+Even with this error, partytown will work correctly as long as your script does not use the History API.
+
+## Debug
+To make sure that partytown is able to run scripts, install partytown in a development workspace and observe if the following message is printed in the browser console. 
+
+
+```
+Partytown was able to run this script. If you are having problems running your script, it is possible that there is a compatibility issue between your script and partytown.
+```
+
 ## Development
 
 Modify the `src/head.html` file and run the `yar run build` command.

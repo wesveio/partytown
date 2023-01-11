@@ -1,4 +1,4 @@
-/* Partytown 0.5.2 - MIT builder.io */
+/* Partytown 0.7.4 - MIT builder.io */
 ;(self => {
   const [
     getter,

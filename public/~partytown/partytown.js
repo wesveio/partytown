@@ -1,4 +1,4 @@
-/* Partytown 0.5.2 - MIT builder.io */
+/* Partytown 0.7.4 - MIT builder.io */
 !(function (t, e, n, i, r, o, a, d, s, c, p, l) {
   function u() {
     l ||
@@ -38,7 +38,7 @@
       (c.src =
         a +
         'partytown-' +
-        (t ? 'atomics.js?v=0.5.2' : 'sandbox-sw.html?' + Date.now())),
+        (t ? 'atomics.js?v=0.7.4' : 'sandbox-sw.html?' + Date.now())),
       e.body.appendChild(c)
   }
   function w(t, n) {

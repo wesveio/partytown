@@ -38,10 +38,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@builder.io/partytown@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.5.2.tgz#ba40369f7c0fd22169eaf6906325c150d7f77dd0"
-  integrity sha512-DHJPs5WPVFExUuGMsuA6yZQ6OPtVVv/3JJK9pzGrNfvuGNvlip5v7xOhXwZG26HLU9ZrrOFsOGhn5FUT2H7dPw==
+"@builder.io/partytown@^0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.7.4.tgz#7ac078bf288efc041ecec025679a58ca78ab4ab9"
+  integrity sha512-dcZBPNQiHbMhvDGmdWRFNe75Z/XYmeZ2bubYmC5BeQpF09ObbPcbSqIP2NaNOFonKlWLfsE6u1790o9ZmlfpIw==
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
