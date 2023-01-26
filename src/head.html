@@ -1,10 +1,12 @@
-<script>var forward = "\{\{settings.forward\}\}"</script>
+<script>
+  var forward = decodeURIComponent('\{\{settings.forward\}\}')
+</script>
 <script>
   partytown = {
     forward: forward ? forward.split(',') : [],
     lib: `/_v/public/assets/v1/published/vtex.partytown@{{version}}/public/~partytown/`,
-    debug: false
-  };
+    debug: false,
+  }
 </script>
 <script type="text/partytown">
   if (window && window.__RUNTIME__ && !window.__RUNTIME__.production) {

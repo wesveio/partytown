@@ -1,4 +1,4 @@
-<script>var forward="{{settings.forward}}"</script>
+<script>var forward=decodeURIComponent("{{settings.forward}}")</script>
 <script>partytown={forward:forward?forward.split(","):[],lib:"/_v/public/assets/v1/published/vtex.partytown@1.0.1-beta.0/public/~partytown/",debug:!1}</script>
 <script type="text/partytown">
   if (window && window.__RUNTIME__ && !window.__RUNTIME__.production) {
